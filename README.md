@@ -1,11 +1,31 @@
 <script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
-<script src="https://unpkg.com/isomorphic-git"></script>
+<script src="https://unpkg.com/isomorphic-git@beta"></script>
 <script type="module">
 import http from 'https://unpkg.com/isomorphic-git@beta/http/web/index.js'
-const fs = new LightningFS('fs')
+// Initialize isomorphic-git with a file system
+window.fs = new LightningFS('fs')
+// I prefer using the Promisified version honestly
+window.pfs = window.fs.promises
+  
+window.dir = '/gadgets'
+console.log(dir);
+await pfs.mkdir(dir);  
 
-const dir = '/test-clone'
-git.clone({ fs, http, dir, url: 'https://github.com/isomorphic-git/lightning-fs', corsProxy: 'https://cors.isomorphic-git.org' }).then(console.log)
+await git.clone({
+  fs,
+  http,
+  dir,
+  corsProxy: 'https://cors.isomorphic-git.org',
+  url: 'https://github.com/dsanteodoro/testpages',
+  ref: 'master',
+  singleBranch: true,
+  depth: 10
+});
+
+// Now it should not be empty...
+await pfs.readdir(dir);
+
+  
 </script>
 
 
