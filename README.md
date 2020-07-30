@@ -9,10 +9,10 @@ window.pfs = window.fs.promises
   
 window.dir = '/gadgets'
 console.log(dir);
-await pfs.mkdir(dir);  
+await window.pfs.mkdir(dir);  
 
 await git.clone({
-  fs,
+  window.fs,
   http,
   dir,
   corsProxy: 'https://cors.isomorphic-git.org',
@@ -23,7 +23,7 @@ await git.clone({
 });
 
 // Now it should not be empty...
-await pfs.readdir(dir);
+await window.pfs.readdir(window.dir);
 
   
 </script>
