@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+
 <html>
 <!-- 
   Copyright Indra Soluciones Tecnologías de la Información, S.L.U.
@@ -94,7 +94,7 @@ function utf8_to_b64( str ) {
     </tr>
 </table>
 
-  </div>  
+ 
 </body>
 
 
