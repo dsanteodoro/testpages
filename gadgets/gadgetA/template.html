@@ -1,0 +1,7 @@
+<!-- to use the template we can create a datasource with a query like this:select distinct (Restaurant.borough) as borough from Restaurants as cWhen we use the template, the parameters can be filled, for example, as follows:SIGNALNAME, name of the signal that the gadget emits, we write boroughPARAMETER-FROMDATASOURCE-VALUE, we select the datasource borough parameter that would be the value that is sent.PARAMETER-FROMDATASOURCE-LABEL, we select the datasource borough parameter that would be the label that is shown.-->
+<md-input-container style="margin:0;padding:0;width:100%"> <md-select ng-change="sendFilter('<!--label-osp name="signalName" type="text"-->',c)" ng-model="c"> 
+  <md-option ng-value="inst.<!--label-osp name="parameter-fromDataSource-value" type="ds_parameter"--> " ng-repeat='inst in ds' >
+      {{inst.<!--label-osp  name="parameter-fromDataSource-label" type="ds_parameter"-->}} 
+  </md-option>
+  </md-select>
+</md-input-container>
