@@ -1,8 +1,9 @@
 {
-    "identification": "Chart Bubble",
-    "description": "this template creates a chart bubble",
+    "identification": "FF Line",
+    "description": "this template creates a chart line",
     "html": "<span ng-init=\"\r\n    cdata=[];\r\n    cdatasetOverride={label: '<!--label-osp  name=\"series label\" type=\"text\"-->'};\r\n    options={\r\n      legend: {display: true}, \r\n      maintainAspectRatio: false, \r\n      responsive: true,\r\n      scales: {\r\n        xAxes: [{\r\n          display: true,\r\n          scaleLabel: {\r\n              labelString: '<!--label-osp  name=\"xAxes label\" type=\"text\"-->',\r\n              display: true\r\n          }\r\n        }],\r\n        yAxes: [{\r\n          display: true,\r\n          scaleLabel: {\r\n              labelString: '<!--label-osp  name=\"yAxes label\" type=\"text\"-->',\r\n              display: true\r\n          }\r\n        }]\r\n      }\r\n    };\"/>\r\n\r\n    \r\n<span ng-repeat=\"inst in ds\">\r\n  <span ng-init=\"cdata.push({x:inst.<!--label-osp  name=\"xAxes Data\" type=\"ds_parameter\"-->, y:inst.<!--label-osp  name=\"yAxes Data\" type=\"ds_parameter\"-->, r:inst.<!--label-osp  name=\"radio Data\" type=\"ds_parameter\"-->})\"></span>\r\n</span>\r\n\r\n<div style=\"height:calc(100% - 50px)\">\r\n\r\n<canvas class=\"chart chart-bubble\" chart-data=\"cdata\"\r\n                  chart-colors=\"colors\" chart-options=\"options\" chart-series=\"cseries\" chart-labels=\"clabels\" chart-dataset-override=\"cdatasetOverride\"></canvas>\r\n\r\n",
     "js": "//Write your controller (JS code) code here\r\n\r\n//Focus here and F11 to full screen editor\r\n\r\n//This function will be call once to init components\r\nvm.initLiveComponent = function(){\r\n\r\n};\r\n\r\n//This function will be call when data change. On first execution oldData will be null\r\nvm.drawLiveComponent = function(newData, oldData){\r\n\r\n};\r\n\r\n//This function will be call on element resize\r\nvm.resizeEvent = function(){\r\n\r\n}\r\n\r\n//This function will be call when element is destroyed\r\nvm.destroyLiveComponent = function(){\r\n\r\n};",
+    "header":"",
     "user": "administrator",
     "public": true
   }
