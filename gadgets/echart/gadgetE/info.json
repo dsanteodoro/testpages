@@ -1,9 +1,4 @@
 {
     "identification": "Simple Value E",
-    "description": "this template shows a value with its title and an icon",
-    "html": "<style>\r\n  .card-count{\r\n   color: #2e43ab;\r\n    font-weight: bold;\r\n    font-size: -webkit-xxx-large; \r\n   padding-left: 20px;\r\n  }\r\n  .card-title{\r\n   color: #000000;\r\n    font-weight: bold;\r\n    font-size: x-large;   \t\r\n  }\r\n  \r\n.card-green{\r\n  color:green;\r\n  \r\n  }\r\n  .my-card{\r\n      padding: 15px;\r\n  }\r\n   .card-icon{     \r\n      padding-top: 0px;\r\n      padding-left: 0px;\r\n      padding-bottom: 25px;\r\n      padding-right: 25px;\r\n  }\r\n  \r\n</style>\r\n\r\n\r\n<div class=\"my-card\">\r\n\r\n\r\n <md-icon class=\"card-icon\" style=\"font-size:35px\">assessment</md-icon> \r\n <label class=\"card-title\"><!--label-osp  name=\"title\" type=\"text\"--></label><br>\r\n <label class=\"card-count\">{{ds[0].<!--label-osp  name=\"ontology field\" type=\"ds_parameter\"-->}}</label>\r\n      \r\n\r\n</div>\r\n\r\n",
-    "js": "//Write your controller (JS code) code here\r\n\r\n//Focus here and F11 to full screen editor\r\n\r\n//This function will be call once to init components\r\nvm.initLiveComponent = function(){\r\n\r\n};\r\n\r\n//This function will be call when data change. On first execution oldData will be null\r\nvm.drawLiveComponent = function(newData, oldData){\r\n\r\n};\r\n\r\n//This function will be call on element resize\r\nvm.resizeEvent = function(){\r\n\r\n}\r\n\r\n//This function will be call when element is destroyed\r\nvm.destroyLiveComponent = function(){\r\n\r\n};",
-    "header":"",
-    "user": "administrator",
-    "public": true
+    "description": "this template shows a value with its title and an icon"
   }
