@@ -2,3 +2,6 @@ Example of using github pages that allows you to read the file tree of the branc
 In this example case it is a list of gadget templates with their associated image.
 
 <a href="https://dsanteodoro.github.io/testpages/">https://dsanteodoro.github.io/testpages/</a>
+
+
+añadir estructura de ficheros.
